@@ -39,5 +39,13 @@
 - MathFunctions/MathFunctions.h : declare the mysqrt function
 - MathFunctions/mysqrt.cxx : implement the mysqrt function
 
+## Version 2.2 -- function optional : mysqrt or sqrt?
+
+- CMakeLists.txt : Add option and judge whether use mysqrt
+- TutorialConfig.h.in : define or not define USE_MYMATH
+- tutorial.cxx : judge and invoke which function
+- MathFunctions/CmakeLists.txt
+- MathFunctions/MathFunctions.h
+- MathFunctions/mysqrt.cxx
 
 
