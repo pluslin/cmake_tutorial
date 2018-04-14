@@ -6,4 +6,12 @@
 - CMakeLists.txt
 - tutorial.cxx : using standard function compute the square of a number
 
-
+> About how to run the cmake project
+>
+> And same to other version. Just check it for more understand
+```
+    $ mkdir build
+    $ cd build
+    $ cmake ..
+    $ make
+```
