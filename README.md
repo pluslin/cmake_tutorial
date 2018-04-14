@@ -65,3 +65,16 @@
     $ make install
 ```
 
+## Version 3.2 -- add tests to verify application working correctly
+
+- CMakeLists.txt : add test code
+- TutorialConfig.h.in
+- tutorial.cxx 
+- MathFunctions/CmakeLists.txt 
+- MathFunctions/MathFunctions.h
+- MathFunctions/mysqrt.cxx
+
+> Run test examples
+```
+    $ ctest
+```
