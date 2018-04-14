@@ -51,3 +51,8 @@ set_tests_properties (TutorialSmall PROPERTIES PASS_REGULAR_EXPRESSION "0.0001 i
 add_test (TutorialUsage Tutorial)
 set_tests_properties (TutorialUsage PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number")
 
+# does this system provide the log and exp functions?
+include (CheckFunctionExists)
+check_function_exists (log HAVE_LOG)
+check_function_exists (exp HAVE_EXP)
+

@@ -12,7 +12,11 @@ double mysqrt(double x)
     double delta;
     result = x;
 
-
+    // if we have both log and exp then use them
+#if defined (HAVE_LOG) && defined (HAVE_EXP)
+    result = exp(log(x) * 0.5);
+    printf("The platform have log and exp support.\n");
+#else
     // do ten iterations
     int i;
     for (i = 0; i < 10; ++i) {
@@ -23,6 +27,8 @@ double mysqrt(double x)
         result = result + 0.5 * delta / result;
         fprintf(stdout, "Computing sqrt of %g to be %g\n", x, result);
     }
+    printf("The system don't have log and exp support.\n");
+#endif
     return result;
 }
 

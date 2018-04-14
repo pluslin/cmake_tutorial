@@ -78,3 +78,15 @@
 ```
     $ ctest
 ```
+
+## Version 4 -- support platforms difference
+
+
+- CMakeLists.txt : check functions availability
+- TutorialConfig.h.in : define macro
+- tutorial.cxx 
+- MathFunctions/CmakeLists.txt 
+- MathFunctions/MathFunctions.h
+- MathFunctions/mysqrt.cxx : select functions according to different platform
+
+
