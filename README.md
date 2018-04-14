@@ -48,4 +48,20 @@
 - MathFunctions/MathFunctions.h
 - MathFunctions/mysqrt.cxx
 
+## Version 3 -- add install rules
+
+- CMakeLists.txt : add install target
+- TutorialConfig.h.in
+- tutorial.cxx 
+- MathFunctions/CmakeLists.txt : add install target
+- MathFunctions/MathFunctions.h
+- MathFunctions/mysqrt.cxx
+
+> We can type 'make install' after that
+```
+    // specify the installation path
+    $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/.local
+    $ make
+    $ make install
+```
 
