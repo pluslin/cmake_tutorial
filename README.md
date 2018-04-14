@@ -30,4 +30,14 @@
     Usage: ./Tutorial number
 ```
 
+## Version 2 -- add a subdirectory library
+
+- CMakeLists.txt : link to MathFunctions's library
+- TutorialConfig.h.in
+- tutorial.cxx : include MathFunctions.h and call mysqrt function
+- MathFunctions/CmakeLists.txt : add a subdirectory library to project
+- MathFunctions/MathFunctions.h : declare the mysqrt function
+- MathFunctions/mysqrt.cxx : implement the mysqrt function
+
+
 
